@@ -123,7 +123,7 @@ h1>span{
 .trapecio-top {
     width: 100vw;
     height: 0px;
-    border-right: 100px solid transparent;
+    border-right: 90px solid transparent;
     border-left: 100px solid transparent;
     border-top: 90px solid var(--green);
     position: absolute;
@@ -403,48 +403,75 @@ font-weight: 800;
     width: 265px;
 }
 
-
-.experiencia{
+.contenedor-experienciados{
     background-color: var(--ligth-gray);
-    width: 59vw;
+    width: 412px;
     margin: 0 auto;
-    height: 233px;
-}
-
-.experiencia > h2{
-    background-color: var(--ligth-gray);
-    margin-bottom: 1rem;
-}
-
-.contenedor-experiencia{
-    padding: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 1.5rem;
-    background-color: var(--ligth-gray);
-    
-    
+    align-items: center;
+    padding: 0.5rem;
 }
 
 
-.empresa{
+
+.carrousel{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    background-color: var(--ligth-gray);
+}
+
+.contenedor-carrousel{
+    width: 300px;
+    margin: 0 auto;
+    background-color: var(--ligth-gray);
+    
+    margin-bottom: 4rem;
+}
+
+.experiencia-carrousel{
     text-align: center;
     background-color: var(--ligth-gray);
-    width: 130px;
-}
-
-
-.img-experiencia{
-    width: 60px;
-    background-color: var(--ligth-gray);
     
 }
 
-.empresa > h5,
-.empresa > small{
-    background-color: var(--ligth-gray)
+.experiencia-carrousel > img{
+   width: 60px;
+   background-color: transparent;
 }
+
+
+.experiencia-carrousel > h5,
+.experiencia-carrousel > small{
+    background-color: transparent
+}
+
+.contenedor-carrousel > h2 {
+    margin-bottom: 2rem;
+    background-color: transparent
+
+}
+
+.card{
+    background-color: transparent;
+}
+
+.bx{
+    background-color: transparent;
+    color: var(--orange);
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
 
 #portafolio{
     margin-top: 4rem;
@@ -491,6 +518,9 @@ font-weight: 800;
     width: 100%;
 }
 
+
+
+
 .contacto{
 padding: 2rem;
 }
@@ -536,74 +566,6 @@ padding: 2rem;
 
 
 
-
-
-
-
-
-
-
-
-
-/*
-
-.carrousel{
-    padding: 2rem;
-    width: 500px;
-    height: 200px;
-    margin-top: 5rem;
-    
-}
-
-.carrousel{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 1.2rem;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    padding: 2rem;
-    height: 285px;
-    margin-top: 0;
-    object-fit: cover;
-    
-   
-}
-
-.experiencia{
-    width: 200px;
-    height: 351px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-article > img {
-    width: 82px;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 500px) {
 
     .section--div1{
@@ -616,8 +578,6 @@ article > img {
    
 
 }
-
-
 
 
 
@@ -711,4 +671,19 @@ article > img {
        
         margin-top: 0rem;
     }
+
+    .contenedor-carrousel{
+
+        width: 450px;
+        margin: 0 auto;
+
+    }
+
+    .bx{
+        visibility: hidden;
+    }
+
+    .contenedor-experienciados{
+        width: 700px;
+}
 }
