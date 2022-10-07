@@ -3,7 +3,7 @@
 /*font-family: 'Poppins', sans-serif;*/
 
 :root{
-    --green : #197f5b;
+    --green : rgb(12, 112, 162) ;
     --orange: #EF9919;
     --ligth-gray: #f9f5f2;
     --ligth-black:#535353;
@@ -109,6 +109,9 @@ a{
 }
 .fotografia{
     width: 200px;
+    height: 270px;
+    object-fit:cover;
+    border-radius: 10px;
     
 }
 
@@ -156,6 +159,7 @@ h1>span{
     background-color: white;
     width: 25px;
     margin-top: 10px;
+    
     
 }
 
@@ -295,6 +299,9 @@ input:focus{
     width: 200px;
 }
 
+.Acerca-de-mi > a {
+    text-align: center;
+}
 .Estudios > h2{
     text-align: center;
     margin-top: 2rem;
@@ -388,19 +395,19 @@ font-weight: 800;
 }
 
 .Web{
-    width: 290px;
+    width: 160px;
 }
 
 .Interaction{
-    width: 350px;
+    width: 235px;
 }
 
 .UX{
-    width: 310px;
+    width: 200px;
 }
 
 .Frameworks{
-    width: 265px;
+    width: 275px;
 }
 
 .contenedor-experienciados{
@@ -418,7 +425,7 @@ font-weight: 800;
 .carrousel{
     display: grid;
     grid-auto-flow: column;
-    gap: 4rem;
+    gap: 6rem;
     overflow-y: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
@@ -465,6 +472,7 @@ font-weight: 800;
     background-color: transparent;
     color: var(--orange);
 }
+
 
 
 ::-webkit-scrollbar{
@@ -685,5 +693,11 @@ padding: 2rem;
 
     .contenedor-experienciados{
         width: 700px;
-}
+
+    }
+
+    .carrousel{
+        gap:3rem
+    }
+
 }
